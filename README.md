@@ -6,21 +6,12 @@
 [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/DZCyber/EgoScreen-Emotion)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Ze Dong<sup>1\*</sup>, Hao Shi<sup>2,4,\*</sup>, Zejia Gao<sup>3</sup>, Zhonghua Yi<sup>4</sup>, Kaiwei Wang<sup>4</sup>, Lin Wang<sup>1†</sup>**
-
-<sup>1</sup>EmPACT Lab, School of EEE, Nanyang Technological University ·
-<sup>2</sup>Ant Group ·
-<sup>3</sup>Okayama University of Science ·
-<sup>4</sup>Zhejiang University
-
-<sup>\*</sup>Equal contribution · <sup>†</sup>Corresponding author
-
 > Watching movies together with humans provides a natural setting for robot affective perception. **RoboAffect** introduces **EgoScreen-Emotion (ESE)**—the first benchmark for **viewer-level** emotion under egocentric screen-view conditions—plus a multimodal reference framework and real-robot demonstration.
 
 <p align="center">
   <img src="assets/overview.jpg" width="95%" alt="Overview"/>
   <br/>
-  <em>(A) Shared viewing under robot-relevant conditions · (B) Egocentric multimodal inputs · (C) ESE-supervised affect inference · (D) LED + spoken rationale response.</em>
+  <em>(A) Shared viewing under robot-relevant conditions · (B) Ego frames, audio, and narrative summaries · (C) ESE-supervised affect inference · (D) LED + spoken rationale response.</em>
 </p>
 
 ---
