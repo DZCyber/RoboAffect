@@ -6,12 +6,21 @@
 [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/DZCyber/EgoScreen-Emotion)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> Companion robots co-watching media need **viewer-level** affective perception from egocentric screen views—not character emotion recognition. **RoboAffect** (aka EgoScreen-Emotion / ESE) provides the dataset, multimodal framework, and real-robot demonstration for this task.
+**Ze Dong<sup>1\*</sup>, Hao Shi<sup>2,4,\*</sup>, Zejia Gao<sup>3</sup>, Zhonghua Yi<sup>4</sup>, Kaiwei Wang<sup>4</sup>, Lin Wang<sup>1†</sup>**
+
+<sup>1</sup>EmPACT Lab, School of EEE, Nanyang Technological University ·
+<sup>2</sup>Ant Group ·
+<sup>3</sup>Okayama University of Science ·
+<sup>4</sup>Zhejiang University
+
+<sup>\*</sup>Equal contribution · <sup>†</sup>Corresponding author
+
+> Watching movies together with humans provides a natural setting for robot affective perception. **RoboAffect** introduces **EgoScreen-Emotion (ESE)**—the first benchmark for **viewer-level** emotion under egocentric screen-view conditions—plus a multimodal reference framework and real-robot demonstration.
 
 <p align="center">
   <img src="assets/overview.jpg" width="95%" alt="Overview"/>
   <br/>
-  <em>ESE enables robot affective perception from shared viewing: egocentric FPV capture → viewer-level emotion → emotional expression feedback.</em>
+  <em>(A) Shared viewing under robot-relevant conditions · (B) Egocentric multimodal inputs · (C) ESE-supervised affect inference · (D) LED + spoken rationale response.</em>
 </p>
 
 ---
@@ -20,39 +29,31 @@
 
 | | |
 |---|---|
-| **Dataset** | 224 trailers · 28,667 egocentric keyframes · **18** viewing conditions · **5** raters with confidence scores |
-| **Task** | Viewer-level multi-label emotion (what the *robot as co-viewer* feels), not on-screen character affect |
-| **Model** | Qwen2.5-Omni-7B + LoRA · 3 frames + 10s audio + narrative context |
-| **Result** | Macro-F1 **32.74** (84.3% of human LOO ceiling **38.82**) · beats Gemini-2.5-Flash (**23.50**) |
-| **Robot** | End-to-end quadruped demo: FPV perception → expression + TTS |
+| **Dataset (ESE)** | 224 trailers · **28,667** egocentric keyframes · **18** viewing conditions · **5** raters with multi-label confidence |
+| **Domain gap** | Raw→Ego Macro-F1 drops **28.06 → 14.64** (**47.8%** relative decline) |
+| **Model** | Qwen2.5-Omni-7B + LoRA · 3 frames + 10s audio + narrative summaries |
+| **Result** | Macro-F1 **32.74** = **85.1%** of human LOO reference (**38.49**) · > Gemini-2.5-Flash (**23.50**) |
+| **Robot** | Quadruped demo + user study: higher exclusive preference vs.\ Gemini on perception & response |
 
 ---
 
-## Dataset construction
+## Inter-annotator agreement
 
 <p align="center">
-  <img src="assets/construction_pipeline.jpg" width="95%" alt="Construction pipeline"/>
+  <img src="assets/confidence_sweep.png" width="41%" alt="Confidence sweep"/>
+  <img src="assets/spearman_vs_kappa.png" width="55%" alt="Spearman vs Kappa"/>
   <br/>
-  <em>(a) Trailer curation & raw frames · (b) Controlled egocentric recording (18 conditions) · (c) Temporal alignment · (d) Viewer-level confidence annotation.</em>
+  <em>Left: Fleiss' κ vs.\ confidence threshold (overall κ=0.34; κ=0.72 at high confidence). Right: per-category κ and Spearman ρ.</em>
 </p>
 
-### Inter-annotator agreement
-
-<p align="center">
-  <img src="assets/confidence_sweep.png" width="48%" alt="Confidence sweep"/>
-  <img src="assets/spearman_vs_kappa.png" width="48%" alt="Spearman vs Kappa"/>
-  <br/>
-  <em>Left: per-class Fleiss' κ vs. confidence threshold. Right: per-category κ and Spearman ρ.</em>
-</p>
-
-### Dataset statistics
+## Dataset statistics
 
 <p align="center">
   <img src="assets/category.jpg" width="32%" alt="Category by genre"/>
-  <img src="assets/annotator_bias.jpg" width="32%" alt="Annotator bias"/>
+  <img src="assets/annotator_bias.jpg" width="32%" alt="Annotator patterns"/>
   <img src="assets/emotion_distribution.png" width="32%" alt="Emotion distribution"/>
   <br/>
-  <em>(a) Emotion × genre · (b) Per-annotator patterns · (c) Overall viewer-level distribution.</em>
+  <em>(a) Emotion × genre · (b) Per-annotator selection patterns · (c) Overall long-tailed viewer-level distribution.</em>
 </p>
 
 ---
@@ -62,45 +63,59 @@
 <p align="center">
   <img src="assets/sft_framework.jpg" width="90%" alt="Multimodal framework"/>
   <br/>
-  <em>Multimodal long-context framework: short-term vision/audio + memory-inspired narrative context; label-smoothed class-balanced training.</em>
+  <em>Multimodal triplet (V<sub>t</sub>, A<sub>t</sub>, S<sub>t</sub>) → emotion + rationale; LED expression + TTS affective action.</em>
 </p>
 
 ---
 
 ## Results
 
-### Domain gap (why FPV data matters)
+### Cross-domain gap (Raw vs.\ Ego)
 
 | Setting | Acc | Macro-F1 | Weighted-F1 |
 |---|---:|---:|---:|
-| Raw→Raw | 63.33 | 27.99 | 60.76 |
-| FPV→FPV | 57.74 | 20.61 | 55.18 |
-| **Raw→FPV** | 55.75 | **16.69** | 46.47 |
-| FPV→Raw | 61.19 | 25.19 | 58.68 |
+| Raw→Raw | 63.72 | 28.06 | 62.15 |
+| Ego→Ego | 56.33 | 24.81 | 57.09 |
+| **Raw→Ego** | 61.05 | **14.64** | 52.55 |
+| Ego→Raw | 60.04 | 27.55 | 60.72 |
 
-Training on pristine cinema and testing on FPV drops Macro-F1 by **~40%** (27.99 → 16.69).
+### Main comparison & modality ablation (ESE test)
 
-### Comparison (ESE test set)
-
-| Type | Model | Acc | Macro-F1 | Weighted-F1 |
+| Type | Model / Setting | Acc | Macro-F1 | Weighted-F1 |
 |---|---|---:|---:|---:|
 | Zero-shot | Qwen2.5-Omni-7B | 55.22 | 16.36 | 46.76 |
+| Zero-shot | Qwen3-VL-8B | 52.37 | 15.83 | 46.78 |
 | Zero-shot | LLaVA-1.6-13B | 52.55 | 8.75 | 40.38 |
-| Zero-shot | InternVL2-8B | 27.47 | 11.92 | 34.38 |
+| Zero-shot | LLaVA-OneVision-1.5-8B | 39.18 | 14.08 | 37.23 |
+| Zero-shot | InternVL2-8B | 41.21 | 16.61 | 44.01 |
+| Zero-shot | Qwen3.5-Plus | 54.07 | 16.88 | 49.58 |
 | Zero-shot | GPT-5.2 | 56.87 | 18.36 | 52.85 |
 | Zero-shot | Gemini-2.5-Flash | 52.62 | **23.50** | 53.52 |
-| Fine-tuned | **Ours (3F+Aud+Narr)** | — | **32.74** | — |
-| Human LOO ceiling | — | 61.12 | **38.48–38.82** | 62.69 |
+| Human | LOO reference | 61.12 | **38.49** | 62.73 |
+| Fine-tuned | InternVL2-8B + LoRA | 56.18 | 22.10 | 55.64 |
+| Fine-tuned | Qwen3-VL-8B + LoRA | 61.18 | 22.13 | 58.28 |
+| Fine-tuned | ESE: 1F | 56.33 | 24.81 | 57.09 |
+| Fine-tuned | ESE: 1F + Rationale | 56.19 | 25.70 | 56.53 |
+| Fine-tuned | ESE: 3F | 58.33 | 26.76 | 58.63 |
+| Fine-tuned | ESE: 3F + Audio | **63.14** | 29.26 | **63.23** |
+| Fine-tuned | **ESE: 3F + Audio + Narr** | 61.52 | **32.74** | 62.96 |
 
-Full model reaches **84.3%** of the human leave-one-out Macro-F1 ceiling; single-frame baseline is 24.81.
-
-### Real-robot qualitative
+### Robot demonstration & user study
 
 <p align="center">
-  <img src="assets/embodied_real.jpg" width="95%" alt="Embodied real comparison"/>
+  <img src="assets/real_demo.jpg" width="95%" alt="Real-robot qualitative"/>
   <br/>
-  <em>Movie scenes → human viewer labels → FPV observations → Ours vs. GPT-5.2 zero-shot under real egocentric screen-view conditions.</em>
+  <em>Movie scene · human viewer annotation · egocentric observation · Ours vs.\ GPT-5.2 under real screen-view conditions.</em>
 </p>
+
+User study vs.\ Gemini-2.5-Flash (N=30, 25 clips each):
+
+| Measure | Ours | Gemini | Both | Neither | p |
+|---|---:|---:|---:|---:|---:|
+| Perception pref. (%) | **35.5** | 16.5 | 22.9 | 25.1 | &lt;.001 |
+| Response pref. (%) | **32.5** | 19.5 | 25.5 | 22.5 | .012 |
+| Godspeed PI | **4.05±0.38** | 3.25±0.40 | — | — | &lt;.001 |
+| RoSAS Competence | **7.50±0.85** | 6.23±1.23 | — | — | &lt;.001 |
 
 ---
 
@@ -109,12 +124,11 @@ Full model reaches **84.3%** of the human leave-one-out Macro-F1 ceiling; single
 | Asset | Location |
 |---|---|
 | Annotations, narrative JSON, metadata | **This repo** |
-| Ego frames / audio (large) | Prepared locally; see layout below |
+| Ego frames / audio (large) | See layout below / local packaging |
 | Ego videos (mp4) | [Hugging Face](https://huggingface.co/datasets/DZCyber/EgoScreen-Emotion) |
 
 ```bash
 git clone https://github.com/DZCyber/RoboAffect.git
-# Videos / heavy media: follow the Hugging Face dataset card
 ```
 
 ---
@@ -122,7 +136,7 @@ git clone https://github.com/DZCyber/RoboAffect.git
 ## Repository layout
 
 ```text
-├── assets/                          # paper figures used in this README
+├── assets/                          # main-paper figures for this README
 ├── ego/
 │   ├── video/{genre}/{condition}/{trailer_id}.mp4   # HF only (gitignored)
 │   ├── frames/{genre}/{condition}/{trailer_id}/
@@ -130,7 +144,7 @@ git clone https://github.com/DZCyber/RoboAffect.git
 │   └── narrative/{trailer_id}.json
 ├── raw/
 │   ├── frames/{genre}/{trailer_id}/
-│   ├── audio/{genre}/{trailer_id}.wav               # may be incomplete
+│   ├── audio/{genre}/{trailer_id}.wav
 │   └── narrative/{trailer_id}.json
 ├── annotations/
 │   ├── confidence/{genre}/{trailer_id}/{A..E}.json
@@ -150,6 +164,8 @@ git clone https://github.com/DZCyber/RoboAffect.git
 
 **Genres:** `Action_Tense`, `Comedy_Cheerful`, `Depressive_Dark`, `Inspirational_Hopeful`, `Mystery_Reflective`, `Romantic_Warm`, `Thriller_Horror`, `Tragic_Sad`.
 
+**Conditions:** `0.8m` / `1.3m` × `near` / `middle` / `far` × `left` / `center` / `right` (18 total).
+
 ### Label aggregation
 
 Each rater assigns confidence \(s_{i,c} \in \{0,1,2,3,4,5\}\). Training hard label:
@@ -159,30 +175,22 @@ S_c = sum_i s_{i,c}
 L   = argmax_c S_c
 ```
 
-### Scale (this release vs. paper)
-
-| Item | This release | Paper |
-|---|---:|---:|
-| Trailers | 225 | 224 |
-| Annotated frames | 28,808 | 28,667 |
-| Raters | 5 (A–E) | 5 |
-
-Paper counts match after removing `0036_Despicable_Me_2010` (included here).
-
 ---
 
 ## Citation
 
 ```bibtex
-@inproceedings{roboaffect2026,
+@inproceedings{dong2026roboaffect,
   title     = {RoboAffect: Egocentric Emotion Reasoning for Robot Companions in Shared Viewing},
-  author    = {Anonymous},
+  author    = {Dong, Ze and Shi, Hao and Gao, Zejia and Yi, Zhonghua and Wang, Kaiwei and Wang, Lin},
   booktitle = {Conference on Robot Learning (CoRL)},
   year      = {2026}
 }
 ```
 
-*(Update authors / arXiv link after acceptance.)*
+## Acknowledgments
+
+Supported by the Start Up Grant at NTU (03INS002165C140) and the MOE AcRF Tier 1 (Call 2/2025) Grant (RG160/25).
 
 ## License
 
