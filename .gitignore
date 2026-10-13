@@ -1,15 +1,5 @@
-# Large media: keep on disk / Hugging Face; do not push to GitHub
-ego/video/**
-!ego/video/.gitkeep
-ego/frames/
-ego/audio/
-raw/frames/
-raw/audio/**
-!raw/audio/.gitkeep
-
-# Local packaging
-PACK_NOTE.txt
-*.tar
-*.tar.gz
-.DS_Store
-__pycache__/
+ego/video/
+**/.done
+_probe/
+github_release/
+github_release.tar
