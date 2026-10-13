@@ -1,0 +1,17 @@
+{
+  "trailer_id": "0116_Donnie Darko_2001",
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 20,
+      "text": "电影的开头显示了一段绿色背景的文字，内容是“THE FOLLOWING PREVIEW HAS BEEN APPROVED FOR ALL AUDIENCES BY THE MOTION PICTURE ASSOCIATION OF AMERICA”，表示该预告片已获得美国电影协会的批准，适合所有观众观看。接着屏幕变黑，出现白色文字“NEWMARKET FILMS PROUDLY PRESENTS”，然后是“THE NEVER BEFORE SEEN DIRECTOR'S CUT OF THE CULT PHENOMENON”，暗示这是一个从未公开过的导演剪辑版本的 cult 片。紧接着是“SO AHEAD OF ITS TIME YOU'LL HAVE TO GO BACK TO BELIEVE YOUR EYES”，暗示这部电影在当时非常超前，观众需要回到过去才能相信自己的眼睛。",
+      "background": null
+    },
+    {
+      "start_s": 20,
+      "end_s": 40,
+      "text": "一个人站在高处，背景是山峦和森林。接着，画面切换到一个女性，她看起来有些惊讶，随后她向一个方向走去。接着，画面中出现了一群学生在操场上做操。随后，画面转到一个室内场景，两个人坐在桌子旁，其中一个人似乎在讲解或演示某件事情。最后，画面显示一个男人站在一个圆形平台上，周围是树木和灌木丛。",
+      "background": "- premise：电影的开头显示了一段绿色背景的文字，内容是“THEFOLLOWINGPREVIEWHASBEENAPPROVEDFORA\n- entities：（未提取到稳定角色）\n- threats：（未提取到稳定威胁）\n- turning_points：电影的开头显示了一段绿色背景的文字，内容是“THE FOLLOWING PREVIEW HAS BE; 屏幕变黑，出现白色文字“NEWMARKET FILMS PROUDLY PRESENTS”，然后是“; 是“SO AHEAD OF ITS TIME YOU'LL HAVE TO GO BACK TO B\n- tone：neutral"
+    }
+  ]
+}

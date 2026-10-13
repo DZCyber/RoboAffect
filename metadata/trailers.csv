@@ -1,0 +1,225 @@
+trailer_id,genre,condition,n_frames,has_ego_audio,has_narrative
+0024_Terminator 2_1991,Action_Tense,0.8m_far_center,121,1,1
+0025_The Dark Knight_2008,Action_Tense,0.8m_far_left,150,1,1
+0026_The Fellowship of the Ring_2001,Action_Tense,0.8m_far_left,146,1,1
+0023_Skyfall_2012,Action_Tense,0.8m_far_right,83,1,1
+0029_The Matrix_1999,Action_Tense,0.8m_middle_center,140,1,1
+0030_Troy_2004,Action_Tense,0.8m_middle_left,88,0,0
+0027_The Hurt Locker_2008,Action_Tense,0.8m_middle_right,151,1,1
+0028_The Lord of the Rings_ The Two Towers_2002,Action_Tense,0.8m_middle_right,188,0,0
+0019_Pacific Rim_2013,Action_Tense,0.8m_near_center,151,1,1
+0020_Pirates of the Caribbean_ The Curse of the Black Pearl_2003,Action_Tense,0.8m_near_center,145,1,1
+0021_Predator_1987,Action_Tense,0.8m_near_left,134,1,1
+0022_Saving Private Ryan_1998,Action_Tense,0.8m_near_left,129,1,1
+0017_Mad Max_ Fury Road_2015,Action_Tense,0.8m_near_right,155,1,1
+0018_Mission_ Impossible_1996,Action_Tense,0.8m_near_right,122,1,1
+0009_Dunkirk_2017,Action_Tense,1.3m_far_center,132,1,1
+0010_Edge of Tomorrow_2014,Action_Tense,1.3m_far_center,87,1,1
+0011_Fast & Furious_2015,Action_Tense,1.3m_far_left,151,1,1
+0012_Gladiator_2000,Action_Tense,1.3m_far_left,83,1,1
+0007_Casino Royale_2006,Action_Tense,1.3m_far_right,149,1,1
+0008_Die Hard_1988,Action_Tense,1.3m_middle_center,154,1,1
+0015_John Wick_2014,Action_Tense,1.3m_middle_center,152,1,1
+0016_Life of Pi_2012,Action_Tense,1.3m_middle_left,137,1,1
+0013_Harry Potter and the Chamber of Secrets_2002,Action_Tense,1.3m_middle_right,126,1,1
+0014_Harry Potter and the Prisoner of Azkaban_2004,Action_Tense,1.3m_middle_right,108,1,1
+0003_Avatar_2009,Action_Tense,1.3m_near_center,186,1,1
+0004_Baby Driver_2017,Action_Tense,1.3m_near_center,152,1,1
+0005_Black Hawk Down_2001,Action_Tense,1.3m_near_left,145,1,1
+0006_Braveheart_1995,Action_Tense,1.3m_near_left,165,1,1
+0001_1917_2019,Action_Tense,1.3m_near_right,151,1,1
+0002_Apocalypto_2006,Action_Tense,1.3m_near_right,145,1,1
+0048_My Girl_1991,Comedy_Cheerful,0.8m_far_center,138,1,1
+0049_Pitch Perfect_2012,Comedy_Cheerful,0.8m_far_left,151,1,1
+0050_School of Rock_2003,Comedy_Cheerful,0.8m_far_left,142,1,1
+0047_Mean Girls_2004,Comedy_Cheerful,0.8m_far_right,147,1,1
+0052_The Grand Budapest Hotel_2014,Comedy_Cheerful,0.8m_middle_center,95,1,1
+0053_The Truman Show_1998,Comedy_Cheerful,0.8m_middle_left,153,1,1
+0054_Zootopia_2016,Comedy_Cheerful,0.8m_middle_left,96,1,1
+0051_Superbad_2007,Comedy_Cheerful,0.8m_middle_right,73,1,1
+0045_Hot Fuzz_2007,Comedy_Cheerful,0.8m_near_center,150,1,1
+0046_Kung Fu Hustle_2004,Comedy_Cheerful,0.8m_near_left,100,1,1
+0043_Groundhog Day_1993,Comedy_Cheerful,0.8m_near_right,159,1,1
+0044_Home Alone_1990,Comedy_Cheerful,0.8m_near_right,134,1,1
+0034_Catch Me If You Can_2002,Comedy_Cheerful,1.3m_far_center,146,1,1
+0037_Dumb and Dumber_1994,Comedy_Cheerful,1.3m_far_center,117,1,1
+0038_Elf_2003,Comedy_Cheerful,1.3m_far_left,88,1,1
+0035_Clueless_1995,Comedy_Cheerful,1.3m_far_right,147,1,1
+0036_Despicable Me_2010,Comedy_Cheerful,1.3m_far_right,141,1,1
+0042_Frozen_2013,Comedy_Cheerful,1.3m_middle_left,151,0,0
+0039_Everything Everywhere All at Once_2022,Comedy_Cheerful,1.3m_middle_right,161,1,1
+0040_Ferris Bueller_s Day Off_1986,Comedy_Cheerful,1.3m_middle_right,84,1,1
+0032_Big_1988,Comedy_Cheerful,1.3m_near_center,139,1,1
+0033_Bridesmaids_2011,Comedy_Cheerful,1.3m_near_left,143,1,1
+0031_Anchorman_2004,Comedy_Cheerful,1.3m_near_right,101,1,1
+0076_The Godfather_1972,Depressive_Dark,0.8m_far_center,209,1,1
+0077_The Hunt_2012,Depressive_Dark,0.8m_far_left,125,1,1
+0078_The Irishman_2019,Depressive_Dark,0.8m_far_left,117,1,1
+0074_Requiem for a Dream_2000,Depressive_Dark,0.8m_far_right,79,1,1
+0075_Shame_2011,Depressive_Dark,0.8m_far_right,93,1,1
+0080_The Lobster_2015,Depressive_Dark,0.8m_middle_center,94,1,1
+0081_The White Ribbon_2009,Depressive_Dark,0.8m_middle_center,140,1,1
+0082_The Witch_2015,Depressive_Dark,0.8m_middle_left,151,1,1
+0079_The Killing of a Sacred Deer_2017,Depressive_Dark,0.8m_middle_right,70,1,1
+0070_Nocturnal Animals_2016,Depressive_Dark,0.8m_near_center,127,1,1
+0072_Pulp Fiction_1994,Depressive_Dark,0.8m_near_left,152,1,1
+0073_Raging Bull_1980,Depressive_Dark,0.8m_near_left,129,1,1
+0069_Nightcrawler_2014,Depressive_Dark,0.8m_near_right,93,1,1
+0062_Dogville_2003,Depressive_Dark,1.3m_far_center,119,1,1
+0063_Gone Girl_2014,Depressive_Dark,1.3m_far_left,97,1,1
+0064_Irreversible_2002,Depressive_Dark,1.3m_far_left,192,0,0
+0061_Detachment_2011,Depressive_Dark,1.3m_far_right,152,1,1
+0067_Midsommar_2019,Depressive_Dark,1.3m_middle_center,87,1,1
+0068_Mother__2017,Depressive_Dark,1.3m_middle_left,132,1,1
+0071_Parasite_2019,Depressive_Dark,1.3m_middle_left,137,1,1
+0065_Joker_2019,Depressive_Dark,1.3m_middle_right,144,1,1
+0066_Melancholia_2011,Depressive_Dark,1.3m_middle_right,125,1,1
+0057_Antichrist_2009,Depressive_Dark,1.3m_near_center,116,1,1
+0058_Blue Ruin_2013,Depressive_Dark,1.3m_near_center,124,1,1
+0059_Come and See_1985,Depressive_Dark,1.3m_near_left,73,1,1
+0060_Dancer in the Dark_2000,Depressive_Dark,1.3m_near_left,125,1,1
+0055_4 Months_ 3 Weeks and 2 Days_2007,Depressive_Dark,1.3m_near_right,105,1,1
+0056_Amour_2012,Depressive_Dark,1.3m_near_right,103,1,1
+0105_The Intouchables_2011,Inspirational_Hopeful,0.8m_far_center,119,1,1
+0106_The Lion King_1994,Inspirational_Hopeful,0.8m_far_left,71,1,1
+0103_The Color Purple_1985,Inspirational_Hopeful,0.8m_far_right,140,1,1
+0104_The Imitation Game_2014,Inspirational_Hopeful,0.8m_far_right,151,1,1
+0110_The Theory of Everything_2014,Inspirational_Hopeful,0.8m_middle_center,148,1,1
+0111_There_s Still Tomorrow_2023,Inspirational_Hopeful,0.8m_middle_center,138,1,1
+0112_WALL·E_2008,Inspirational_Hopeful,0.8m_middle_left,137,1,1
+0113_Whiplash_2014,Inspirational_Hopeful,0.8m_middle_left,127,1,1
+0099_Rocky_1976,Inspirational_Hopeful,0.8m_near_center,100,1,1
+0100_Rudy_1993,Inspirational_Hopeful,0.8m_near_center,118,1,1
+0101_Slumdog Millionaire_2008,Inspirational_Hopeful,0.8m_near_left,124,1,1
+0102_The Blind Side_2009,Inspirational_Hopeful,0.8m_near_left,150,1,1
+0098_Remember the Titans_2000,Inspirational_Hopeful,0.8m_near_right,145,1,1
+0091_Forrest Gump_1994,Inspirational_Hopeful,1.3m_far_center,66,1,1
+0092_Green Book_2018,Inspirational_Hopeful,1.3m_far_center,150,1,1
+0093_Hidden Figures_2016,Inspirational_Hopeful,1.3m_far_left,146,1,1
+0094_Invictus_2009,Inspirational_Hopeful,1.3m_far_left,156,1,1
+0089_Dying to Survive_2018,Inspirational_Hopeful,1.3m_far_right,188,1,1
+0090_Erin Brockovich_2000,Inspirational_Hopeful,1.3m_far_right,146,1,1
+0096_October Sky_1999,Inspirational_Hopeful,1.3m_middle_center,138,1,1
+0097_Real Steel_2011,Inspirational_Hopeful,1.3m_middle_left,89,0,0
+0107_The Martian_2015,Inspirational_Hopeful,1.3m_middle_left,178,1,1
+0095_Les Choristes__2004,Inspirational_Hopeful,1.3m_middle_right,80,1,1
+0085_Cinderella Man_2005,Inspirational_Hopeful,1.3m_near_center,142,1,1
+0086_Coach Carter_2005,Inspirational_Hopeful,1.3m_near_center,142,1,1
+0087_Dangal_2016,Inspirational_Hopeful,1.3m_near_left,191,1,1
+0088_Dead Poets Society_1989,Inspirational_Hopeful,1.3m_near_left,154,1,1
+0083_127 Hours_2010,Inspirational_Hopeful,1.3m_near_right,150,1,1
+0084_A Beautiful Mind_2001,Inspirational_Hopeful,1.3m_near_right,140,1,1
+0135_The Fountain_2006,Mystery_Reflective,0.8m_far_center,149,1,1
+0136_The Game_1997,Mystery_Reflective,0.8m_far_center,139,1,1
+0137_The Invisible Guest_2016,Mystery_Reflective,0.8m_far_left,91,1,1
+0133_The Cove_2009,Mystery_Reflective,0.8m_far_right,128,1,1
+0134_The Double Life of Véronique_1991,Mystery_Reflective,0.8m_far_right,140,1,1
+0140_The Tree of Life_2011,Mystery_Reflective,0.8m_middle_center,139,1,1
+0141_The Usual Suspects_1995,Mystery_Reflective,0.8m_middle_center,143,0,0
+0142_Zodiac_2007,Mystery_Reflective,0.8m_middle_left,143,1,1
+0143_Oppenheimer_2023,Mystery_Reflective,0.8m_middle_left,187,1,1
+0138_The Lives of Others_2006,Mystery_Reflective,0.8m_middle_right,98,1,1
+0139_The Prestige_2006,Mystery_Reflective,0.8m_middle_right,145,1,1
+0129_Prisoners_2013,Mystery_Reflective,0.8m_near_center,150,1,1
+0130_Seven_1995,Mystery_Reflective,0.8m_near_center,119,1,1
+0131_Shutter Island_2010,Mystery_Reflective,0.8m_near_left,148,1,1
+0132_The Butterfly Effect_2004,Mystery_Reflective,0.8m_near_left,142,1,1
+0128_Primer_2004,Mystery_Reflective,0.8m_near_right,97,1,1
+0122_Interstellar_2014,Mystery_Reflective,1.3m_far_left,153,1,1
+0123_L.A. Confidential_1997,Mystery_Reflective,1.3m_far_left,147,1,1
+0119_Identity_2003,Mystery_Reflective,1.3m_far_right,140,1,1
+0120_Inception_2010,Mystery_Reflective,1.3m_far_right,143,1,1
+0126_Memories of Murder_2003,Mystery_Reflective,1.3m_middle_center,111,1,1
+0127_Now You See Me_2013,Mystery_Reflective,1.3m_middle_left,145,1,1
+0124_Léon_ The Professional_1994,Mystery_Reflective,1.3m_middle_right,148,1,1
+0125_Memento_2000,Mystery_Reflective,1.3m_middle_right,75,1,1
+0116_Donnie Darko_2001,Mystery_Reflective,1.3m_near_center,59,1,1
+0117_Fight Club_1999,Mystery_Reflective,1.3m_near_center,148,1,1
+0118_Gone Baby Gone_2007,Mystery_Reflective,1.3m_near_left,150,1,1
+0114_Arrival_2016,Mystery_Reflective,1.3m_near_right,145,1,1
+0168_Spirited Away_2001,Romantic_Warm,0.8m_far_center,68,1,1
+0169_The Grand Budapest Hotel_2014,Romantic_Warm,0.8m_far_center,95,1,1
+0170_The Legend of 1900_1998,Romantic_Warm,0.8m_far_left,150,1,1
+0166_Silver Linings Playbook_2012,Romantic_Warm,0.8m_far_right,152,1,1
+0167_Sleepless in Seattle_1993,Romantic_Warm,0.8m_far_right,156,1,1
+0173_Titanic_1997,Romantic_Warm,0.8m_middle_center,112,1,1
+0174_Up_2009,Romantic_Warm,0.8m_middle_center,66,1,1
+0175_When Harry Met Sally_1989,Romantic_Warm,0.8m_middle_left,126,1,1
+0176_Your Name_2016,Romantic_Warm,0.8m_middle_left,95,1,1
+0171_The Princess Bride_1987,Romantic_Warm,0.8m_middle_right,137,1,1
+0172_The Shape of Water_2017,Romantic_Warm,0.8m_middle_right,154,1,1
+0163_Moonrise Kingdom_2012,Romantic_Warm,0.8m_near_center,117,1,1
+0164_Once_2007,Romantic_Warm,0.8m_near_center,125,1,1
+0165_Pride and Prejudice_2005,Romantic_Warm,0.8m_near_left,152,0,0
+0161_Love Letter_1995,Romantic_Warm,0.8m_near_right,108,1,1
+0162_Maleficent_2014,Romantic_Warm,0.8m_near_right,91,1,1
+0152_Cinema Paradiso_1988,Romantic_Warm,1.3m_far_center,82,1,1
+0153_Coco_2017,Romantic_Warm,1.3m_far_center,146,1,1
+0154_Flipped_2010,Romantic_Warm,1.3m_far_left,151,1,1
+0155_Harold and Maude_1971,Romantic_Warm,1.3m_far_left,169,1,1
+0150_Call Me by Your Name_2017,Romantic_Warm,1.3m_far_right,116,1,1
+0151_Castle in the Sky_1986,Romantic_Warm,1.3m_far_right,67,1,1
+0157_Her_2013,Romantic_Warm,1.3m_middle_center,152,1,1
+0158_Howl_s Moving Castle_2004,Romantic_Warm,1.3m_middle_center,96,1,1
+0159_In the Mood for Love_2000,Romantic_Warm,1.3m_middle_left,155,1,1
+0160_La La Land_2016,Romantic_Warm,1.3m_middle_left,146,1,1
+0156_Heidi_2015,Romantic_Warm,1.3m_middle_right,106,1,1
+0146_About Time_2013,Romantic_Warm,1.3m_near_center,95,1,1
+0147_Amelie_2001,Romantic_Warm,1.3m_near_center,72,0,0
+0148_Before Sunrise_1995,Romantic_Warm,1.3m_near_left,99,1,1
+0149_Brooklyn_2015,Romantic_Warm,1.3m_near_left,110,1,1
+0144_3 Idiots_2009,Romantic_Warm,1.3m_near_right,177,1,1
+0145_500 Days of Summer_2009,Romantic_Warm,1.3m_near_right,96,1,1
+0195_The Exorcist_1973,Thriller_Horror,0.8m_far_center,99,1,1
+0196_The Omen_1976,Thriller_Horror,0.8m_far_center,132,1,1
+0197_The Others_2001,Thriller_Horror,0.8m_far_left,103,1,1
+0198_The Ring_2002,Thriller_Horror,0.8m_far_left,89,1,1
+0194_The Descent_2005,Thriller_Horror,0.8m_far_right,118,1,1
+0200_The Silence of the Lambs_1991,Thriller_Horror,0.8m_middle_center,108,1,1
+0201_The Sixth Sense_1999,Thriller_Horror,0.8m_middle_left,135,1,1
+0202_Train to Busan_2016,Thriller_Horror,0.8m_middle_left,98,1,1
+0199_The Shining_1980,Thriller_Horror,0.8m_middle_right,88,1,1
+0192_The Babadook_2014,Thriller_Horror,0.8m_near_center,144,1,1
+0193_The Blair Witch Project_1999,Thriller_Horror,0.8m_near_left,70,1,1
+0190_Sinister_2012,Thriller_Horror,0.8m_near_right,152,1,1
+0191_Stranger Things_2016,Thriller_Horror,0.8m_near_right,131,1,1
+0181_Don_t Breathe_2016,Thriller_Horror,1.3m_far_center,150,1,1
+0184_Insidious_2010,Thriller_Horror,1.3m_far_center,109,1,1
+0185_It_2017,Thriller_Horror,1.3m_far_left,143,1,1
+0186_It Follows_2014,Thriller_Horror,1.3m_far_left,78,1,1
+0182_Get Out_2017,Thriller_Horror,1.3m_far_right,153,1,1
+0183_Hereditary_2018,Thriller_Horror,1.3m_far_right,126,1,1
+0188_Rosemary_s Baby_1968,Thriller_Horror,1.3m_middle_center,176,1,1
+0189_Scream_1996,Thriller_Horror,1.3m_middle_left,117,1,1
+0187_Poltergeist_1982,Thriller_Horror,1.3m_middle_right,144,1,1
+0179_Alien_1979,Thriller_Horror,1.3m_near_center,117,1,1
+0180_Carrie_1976,Thriller_Horror,1.3m_near_left,122,1,1
+0177_28 Days Later_2002,Thriller_Horror,1.3m_near_right,92,1,1
+0178_A Quiet Place_2018,Thriller_Horror,1.3m_near_right,116,1,1
+0223_The Fault in Our Stars_2014,Tragic_Sad,0.8m_far_center,146,1,1
+0224_The Great Gatsby_2013,Tragic_Sad,0.8m_far_left,163,1,1
+0225_The Green Mile_1999,Tragic_Sad,0.8m_far_left,139,0,0
+0222_Song of the Phoenix_2016,Tragic_Sad,0.8m_far_right,63,1,1
+0228_The Remains of the Day_1993,Tragic_Sad,0.8m_middle_center,137,1,1
+0229_There_s Still Tomorrow_2023,Tragic_Sad,0.8m_middle_left,138,1,1
+0226_The Notebook_2004,Tragic_Sad,0.8m_middle_right,134,1,1
+0227_The Pianist_2002,Tragic_Sad,0.8m_middle_right,85,1,1
+0218_Mystic River_2003,Tragic_Sad,0.8m_near_center,137,1,1
+0219_Revolutionary Road_2008,Tragic_Sad,0.8m_near_center,130,1,1
+0220_Schindler_s List_1993,Tragic_Sad,0.8m_near_left,178,1,1
+0221_Silenced_2011,Tragic_Sad,0.8m_near_left,180,1,1
+0217_Million Dollar Baby_2004,Tragic_Sad,0.8m_near_right,145,1,1
+0210_Deep Sea_2023,Tragic_Sad,1.3m_far_center,85,1,1
+0211_Grave of the Fireflies_1988,Tragic_Sad,1.3m_far_left,89,1,1
+0208_Brokeback Mountain_2005,Tragic_Sad,1.3m_far_right,172,1,1
+0209_Children of Heaven_1997,Tragic_Sad,1.3m_far_right,60,1,1
+0214_Life is Beautiful_1997,Tragic_Sad,1.3m_middle_center,81,1,1
+0215_Manchester by the Sea_2016,Tragic_Sad,1.3m_middle_center,149,1,1
+0216_Marley & Me_2008,Tragic_Sad,1.3m_middle_left,144,1,1
+0212_Hachi_ A Dog_s Tale_2009,Tragic_Sad,1.3m_middle_right,125,1,1
+0213_Hope_2013,Tragic_Sad,1.3m_middle_right,108,1,1
+0204_Atonement_2007,Tragic_Sad,1.3m_near_center,151,1,1
+0205_Beaches_1988,Tragic_Sad,1.3m_near_center,148,1,1
+0206_Blue Valentine_2010,Tragic_Sad,1.3m_near_left,134,1,1
+0207_Bridge to Terabithia_2007,Tragic_Sad,1.3m_near_left,112,1,1
+0203_A Monster Calls_2016,Tragic_Sad,1.3m_near_right,147,1,1
